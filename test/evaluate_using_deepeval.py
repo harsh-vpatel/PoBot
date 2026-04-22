@@ -30,49 +30,49 @@ from src.rag_pipeline import ask, vectorstore, embeddings
 TEST_CASES = [
     {
         "question": "What are the rights of Foreign Domestic Helpers in Hong Kong?",
-        "expected_answer": "Foreign Domestic Helpers have the right to personal safety. If physically abused or if personal safety is at risk, they can call the police emergency hotline 999 immediately. They are also entitled to rest days under the Employment Ordinance.",
-        "expected_sources": ["FDHguideEnglish.pdf", "fdw_corner_webpage.txt"],
+        "expected_answer": "Foreign Domestic Helpers are entitled to: at least 1 rest day per week, statutory holidays, paid annual leave, free food or food allowance (currently HK$1,236 per month), free accommodation with reasonable privacy, free medical treatment, free passage to/from home country, and wages no less than the Minimum Allowable Wage (MAW) which is currently HK$5,100 per month. If physically abused, they can call Police at 999.",
+        "expected_sources": ["fdw_corner_webpage.txt", "FDHguideEnglish.pdf"],
         "category": "rights"
     },
     {
         "question": "What is the minimum wage for domestic workers?",
-        "expected_answer": "The statutory minimum wage (SMW) rate is reviewed periodically. The Minimum Wage Ordinance establishes the hourly rate. Failure to pay minimum wage amounts to a breach of the Employment Ordinance.",
-        "expected_sources": ["Concise Guide Minimum Wage.pdf", "Concise Guide Employment Ordinance.pdf"],
+        "expected_answer": "For Foreign Domestic Helpers (FDHs), the Minimum Allowable Wage (MAW) is HK$5,100 per month (applicable to contracts signed on or after 30 September 2025). For other workers covered by the Minimum Wage Ordinance, the statutory minimum wage (SMW) is set at an hourly rate. Failure to pay minimum wage is a breach of the Employment Ordinance.",
+        "expected_sources": ["fdh_hire_guidebook.txt", "Concise Guide Minimum Wage.pdf"],
         "category": "wage"
     },
     {
         "question": "Do domestic workers get rest days?",
-        "expected_answer": "Yes. An employee employed under a continuous contract is entitled to not less than one rest day in every period of seven days. Whether the rest day is paid is to be agreed between the employer and employee.",
-        "expected_sources": ["Concise Guide Employment Ordinance.pdf", "FDHguideEnglish.pdf"],
+        "expected_answer": "Yes. Foreign Domestic Helpers are entitled to at least one rest day in every period of 7 days. Employers cannot compel helpers to work on rest days or make any payment in lieu of granting statutory holidays.",
+        "expected_sources": ["fdw_corner_webpage.txt", "Concise Guide Employment Ordinance.pdf"],
         "category": "rights"
     },
     {
         "question": "What are the rules for employment agencies regarding commission?",
-        "expected_answer": "Employment agencies are not allowed to overcharge commission. If convicted of overcharging, the Commissioner for Labour will revoke or refuse to issue/renew the agency's licence. From 2015 to 2018, 12 agencies had licences revoked for this offence.",
-        "expected_sources": ["PGEA_Chapter_4.pdf", "CoP_EA_Eng.pdf"],
+        "expected_answer": "Employment agencies are prohibited from charging job-seekers any fees or expenses other than the prescribed commission, which is currently 10% of the first-month salary after successful placement. Agencies must provide a receipt for commission paid. Overcharging can result in licence revocation.",
+        "expected_sources": ["fdw_corner_webpage.txt", "CoP_EA_Eng.pdf"],
         "category": "agencies"
     },
     {
         "question": "What happens if an employment agency overcharges a worker?",
-        "expected_answer": "If an employment agency is convicted of overcharging commission, the Commissioner for Labour will revoke or refuse to issue or renew its licence. Offenders will also be prosecuted.",
-        "expected_sources": ["PGEA_Chapter_4.pdf"],
+        "expected_answer": "If an employment agency is convicted of overcharging commission, the Commissioner for Labour will revoke or refuse to issue or renew its licence. Offenders will also be prosecuted. Workers should report overcharging to the Employment Agencies Authority (EAA) as soon as possible.",
+        "expected_sources": ["fdw_corner_webpage.txt", "CoP_EA_Eng.pdf"],
         "category": "agencies"
     },
     {
         "question": "Are Foreign Domestic Helpers required to live with their employers?",
-        "expected_answer": "Yes, Foreign Domestic Helpers are typically live-in workers. This is a standard requirement under the FDH employment contract.",
-        "expected_sources": ["FDHguideEnglish.pdf"],
+        "expected_answer": "Yes, Foreign Domestic Helpers must work and reside in their employer's residence as specified in the contract during the whole employment period. Employers must provide free accommodation with reasonable privacy.",
+        "expected_sources": ["fdw_corner_webpage.txt", "fdh_hire_guidebook.txt"],
         "category": "fdh_specific"
     },
     {
         "question": "What laws must employment agencies comply with?",
-        "expected_answer": "Employment agencies must comply with: Employment Ordinance, Employment Agency Regulations, Immigration Ordinance, Trade Descriptions Ordinance, Personal Data (Privacy) Ordinance, and Prevention of Bribery Ordinance.",
+        "expected_answer": "Employment agencies must comply with the Employment Ordinance, Employment Agency Regulations, Code of Practice for Employment Agencies, Immigration Ordinance, Trade Descriptions Ordinance, Personal Data (Privacy) Ordinance, and Prevention of Bribery Ordinance.",
         "expected_sources": ["CoP_EA_Eng.pdf", "PGEA_Chapter_3.pdf"],
         "category": "agencies"
     },
     {
         "question": "What is a continuous contract under the Employment Ordinance?",
-        "expected_answer": "A continuous contract refers to employment where an employee has been employed for 4 weeks or more with at least 18 hours per week. Employees under continuous contract are entitled to statutory benefits including rest days, sickness allowance, and holiday pay.",
+        "expected_answer": "A continuous contract refers to employment where an employee has been employed continuously for 4 weeks or more, with at least 18 hours worked each week. Employees under continuous contract are entitled to statutory benefits including rest days, sickness allowance, statutory holidays, and paid annual leave.",
         "expected_sources": ["Concise Guide Employment Ordinance.pdf"],
         "category": "general_employment"
     },
