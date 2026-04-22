@@ -1,0 +1,8 @@
+# Bigger folders - install requirements, run embedding_setup.py
+/PoBot_env
+/vectorstore
+
+# Extra files
+/Technical Task 2_ Build a Retrieval-Augmented Chatbot (RAG).pdf
+/minimal_rag.py
+/langchain_rag.py
