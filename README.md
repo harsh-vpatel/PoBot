@@ -4,23 +4,23 @@
 
 ### 1. Setup Environment
 ```bash
-cd /mnt/c/Work/Migrasia/PoBot
+git clone https://github.com/harsh-vpatel/PoBot.git
 source PoBot_env/bin/activate  # Windows: PoBot_env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2. Run Preprocessing (if needed)
+### 2. Run Preprocessing (optional - chunks available in data/processed)
 ```bash
-cd notebooks
+cd src
 python preprocess.py
 ```
 
-### 3. Build Vectorstore (if needed)
+### 3. Build Vectorstore (required)
 ```bash
 python embedding_setup.py
 ```
 
-### 4. Launch Chatbot UI ⭐
+### 4. Launch PoBot UI
 ```bash
 python chatbot_ui.py
 ```
@@ -38,15 +38,10 @@ Then type questions directly in the terminal.
 
 ## Run Evaluation
 
-### Old Keyword-Based Evaluation
-```bash
-python evaluate.py
-```
-
-### New DeepEval (Recommended)
 ```bash
 python evaluate_using_deepeval.py
 ```
+Using DeepEval avoids OpenAI country implementation issues as RAGAS requires an OPENAI_API_KEY
 
 Generates detailed JSON report with 5 metrics:
 - Faithfulness (hallucination detection)
@@ -54,28 +49,6 @@ Generates detailed JSON report with 5 metrics:
 - Context Precision
 - Context Recall
 - Answer Correctness
-
----
-
-## Project Structure
-
-```
-PoBot/
-├── notebooks/
-│   ├── preprocess.py          # Document loading & chunking
-│   ├── embedding_setup.py     # Create FAISS vectorstore
-│   ├── rag_pipeline.py        # Main RAG logic
-│   ├── evaluate.py            # Old keyword-based eval
-│   ├── evaluate_using_deepeval.py  # New LLM-based eval
-│   ├── chatbot_ui.py          # Gradio web interface ⭐
-│   └── data/
-│       ├── raw/               # Source PDFs
-│       └── processed/         # Chunks & JSON
-├── vectorstore/
-│   └── faiss_index/           # Embeddings
-├── requirements.txt
-└── README.md
-```
 
 ---
 
@@ -107,9 +80,6 @@ After fixes, target metrics:
 - **Answer Correctness:** 0.75+ (was 0.62)
 - **Source Recall:** 75%+ (good retrieval)
 
-Current weak spot: **wage** category questions (0% correctness)
-- Requires investigation of Minimum Wage PDF chunking
-
 ---
 
 ## API Configuration
@@ -118,7 +88,7 @@ DeepSeek API is configured in:
 - `rag_pipeline.py` line 11: `DEEPSEEK_API_KEY`
 - `evaluate_using_deepeval.py` line 13: `DEEPSEEK_API_KEY`
 
-Update if your key changes.
+Set your key accordingly
 
 ---
 
