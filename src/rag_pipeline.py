@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 import warnings
 warnings.filterwarnings('ignore')
 
-os.environ["DEEPSEEK_API_KEY"] = "sk-cdfad4eedd844539824a9bd2744caa5c"
+os.environ["DEEPSEEK_API_KEY"] = "sk-xxx"
 
 # Create retriever with metadata filtering
 def get_retriever(vectorstore, question):

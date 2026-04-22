@@ -3,20 +3,24 @@
 # Run from CLI: python evaluate_using_deepeval.py
 # Install: pip install deepeval
 
+import sys
 import os
 import json
 from datetime import datetime
 from typing import List, Dict, Any
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
+
 # Set DeepSeek API configuration
-DEEPSEEK_API_KEY = "sk-cdfad4eedd844539824a9bd2744caa5c"
+DEEPSEEK_API_KEY = "sk-xxx"
 DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
 DEEPSEEK_MODEL = "deepseek-chat"
 
 os.environ["DEEPSEEK_API_KEY"] = DEEPSEEK_API_KEY
 
 # Local imports
-from rag_pipeline import ask, vectorstore, embeddings
+from src.rag_pipeline import ask, vectorstore, embeddings
 
 
 # =============================================================================
