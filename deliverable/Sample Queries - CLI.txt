@@ -1,0 +1,67 @@
+You: What happens if an agency overchages a worker?
+Question: What happens if an agency overchages a worker?
+Answer: If an employment agency overcharges a job-seeker (including a worker) commission, it is a serious offence. Offenders will be prosecuted and are liable to a fine of **$350,000** and imprisonment for **3 years**. Upon conviction, the Commissioner for Labour will refuse to renew or will revoke the agency's licence.
+
+**Source:** Context, paragraph under "Overcharging job-seekers commission is a serious offence."
+Sources:
+1. PGEA_Chapter_3.pdf (Category: employment_agencies)
+2. PGEA_Chapter_3.pdf (Category: employment_agencies)
+3. CoP_EA_Eng.pdf (Category: employment_agencies)
+4. CoP_EA_Eng.pdf (Category: employment_agencies)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+You: Can Foreign worker live outside their employer's residence?
+Question: Can Foreign worker live outside their employer's residence?
+Answer: Based on the provided context, a foreign domestic helper (FDH) generally cannot live away from their employer's home. They must work and reside in the employer’s residence in accordance with Clause 3 of the standard employment contract. However, a live-out arrangement is allowed only if it was approved by the Director of Immigration before 1 April 2003, provided the employer continues to employ the helper without a break of more than 6 months.
+
+**Document:** "For helper Q1.7"
+Sources:
+1. FDHguideEnglish.pdf (Category: FDH)
+2. FDHguideEnglish.pdf (Category: FDH)
+3. FDHguideEnglish.pdf (Category: FDH)
+4. fdw_corner_webpage.txt (Category: FDH)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+You: How much does it cost to hire a foreign domestic worker?
+Question: How much does it cost to hire a foreign domestic worker?
+Answer: Based solely on the provided context, the cost to hire a Foreign Domestic Helper (FDH) includes:
+
+- **Minimum Allowable Wage (MAW):** No less than **HK$5,100 per month** (applicable to contracts signed on or after 30 September 2025).
+- **Food allowance (in lieu of free food):** Currently **HK$1,236 per month**.
+- **Accommodation:** You must provide suitable accommodation with reasonable privacy (no specific monetary cost given).
+- **Free passage:** From the helper’s home country to Hong Kong and return on termination or expiry of the contract (no specific monetary cost given).
+- **Insurance:** You must take out an insurance policy under the Employees’ Compensation Ordinance (no specific cost given).
+
+*Source: Context sections on "How much will it cost to hire an FDH?" and "Accommodation and food".*
+Sources:
+1. fdh_hire_guidebook.txt (Category: FDH)
+2. FDHguideEnglish.pdf (Category: FDH)
+3. fdw_corner_webpage.txt (Category: FDH)
+4. FDHguideEnglish.pdf (Category: FDH)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+You: What is the minimum wage to be paid to a worker?
+Question: What is the minimum wage to be paid to a worker?
+Answer: Based solely on the provided context, the Statutory Minimum Wage (SMW) rate is **$43.1 per hour** with effect from 1 May 2026. The total amount to be paid depends on the specific scenario regarding meal breaks and rest days, as detailed in the examples. For instance, in Scenario (2) (meal breaks with pay; rest days without pay), the employee should be paid **$11,185.4** in total. In Scenario (3) (meal breaks without pay; rest days with pay), the employee should be paid **$11,552.1** in total. In Scenario (4) (both meal breaks and rest days with pay), the employee should be paid **$12,505.4** in total.
+
+*Source: Context examples under "Example 3: SMW rate of $43.1 per hour with effect from 1 May 2026".*
+Sources:
+1. Concise Guide Minimum Wage.pdf (Category: wage_protection)
+2. Concise Guide Minimum Wage.pdf (Category: wage_protection)
+3. Concise Guide Minimum Wage.pdf (Category: wage_protection)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+PROBLEM CASE (SMW vs MAW): 
+
+You: How much does it cost to hire a local domestic worker?
+Question: How much does it cost to hire a local domestic worker?
+Answer: The provided documents don't contain information about the cost to hire a local domestic worker. The context only covers the costs and requirements for hiring a Foreign Domestic Helper (FDH), such as the Minimum Allowable Wage (MAW) of HK$5,100 per month and a food allowance of HK$1,236 per month.
+Sources:
+1. fdh_hire_guidebook.txt (Category: FDH)
+2. FDHguideEnglish.pdf (Category: FDH)
+3. FDHguideEnglish.pdf (Category: FDH)
+4. fdw_corner_webpage.txt (Category: FDH)

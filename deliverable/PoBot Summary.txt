@@ -1,0 +1,5 @@
+- Found 3 main domains of information - contractual (Employment ordinance), financial (SMW and MAW), safety (OSH)
+- Currently using metadata-enriched retrieval with hard filtering to differentiate between categories of source information
+- The bot is able to answer most questions well as long as the correct context is retrieved
+- The Chatbot still does not perfectly differentiate between SMW and MAW, "Domestic worker" and "Foreign domestic worker/helper" despite differences in laws and provisions
+- Further work may incorporate substituting hard filtering with a MRR approach, implementing more features such as alternate interpretations of the prompt
