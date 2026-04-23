@@ -1,5 +1,9 @@
 # PoBot - HK Labor Law Chatbot
 
+## Demo
+
+![Demo](deliverable/UI_Q1.png)
+
 ## Quick Start
 
 ### 1. Setup Environment
