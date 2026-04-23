@@ -2,7 +2,11 @@
 
 ## Demo
 
+Here are a few example queries:
+
 ![Demo](deliverable/UI_Q1.png)
+![Demo](deliverable/UI_Q2.png)
+![Demo](deliverable/UI_Q5.png)
 
 ## Quick Start
 
